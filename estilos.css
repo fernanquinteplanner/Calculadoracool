@@ -1,0 +1,87 @@
+/* Fuente y ajustes globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #2e7d32, #a5d6a7); /* Verde oscuro a verde claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Caja de la calculadora */
+  .calculadora {
+    background: linear-gradient(145deg, #3a3a3a, #4f4f4f); /* Degradado de grises */
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    color: #e0f2f1;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Título */
+  .calculadora h2 {
+    margin-bottom: 25px;
+    color: #a5d6a7; /* Verde suave */
+    font-size: 26px;
+  }
+  
+  /* Inputs */
+  input[type="number"] {
+    width: 45%;
+    padding: 12px;
+    margin: 10px 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #616161; /* Gris medio */
+    color: #ffffff;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+  }
+  
+  input[type="number"]::placeholder {
+    color: #bdbdbd;
+  }
+  
+  /* Botones */
+  .botones {
+    margin: 25px 0;
+  }
+  
+  button {
+    padding: 15px 20px;
+    font-size: 20px;
+    margin: 0 8px;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #66bb6a, #388e3c); /* Verde degradado */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to bottom right, #81c784, #2e7d32);
+  }
+  
+  /* Resultado */
+  #resultado {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #c8e6c9; /* Verde muy claro */
+    background-color: #424242;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+  }
+  
